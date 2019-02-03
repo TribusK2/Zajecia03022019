@@ -1,5 +1,5 @@
 p {
-  color: #580051;
+  color: #415800;
   padding: 5px;
   margin: 10px 15px;
   font-size: 20px;
@@ -7,13 +7,17 @@ p {
 
 div {
   margin: 10px 15px;
-  border: 5px solid #be00af;
-  background-color: #fff1fe;
+  border: 5px solid #8cbe00;
+  background-color: #fbfff1;
+}
+
+div:hover {
+  background-color: #eeffbe;
 }
 
 h1, h2, h3 {
   margin: 10px 15px;
-  color: #580051;
+  color: #415800;
 }
 
 #work p, #work h1, #work h2, #work h3 {
@@ -24,4 +28,16 @@ h1, h2, h3 {
 
 #address {
   padding: 40px;
+}
+
+#skills, #education {
+  text-align: center;
+}
+
+#skills p, #education p {
+  text-align: right;
+}
+
+#education {
+  background-color: #eeffbe;
 }

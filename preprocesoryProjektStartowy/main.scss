@@ -1,4 +1,4 @@
-$kolor: (green), (rgb(88, 0, 81));
+$kolor: (green), (rgb(65, 88, 0));
 $pady: 5px;
 $marginy: 10px 15px;
 $ramki: 5px solid lighten(nth($kolor, 2), 20);
@@ -6,6 +6,8 @@ $rozmiar: 20px;
 $padingi: (duze: 40px, male: 1px);
 $padyduze: map-get($padingi, duze);
 $padymale: map-get($padingi, male);
+$aaa: 'work';
+
 
 p {
     color: nth($kolor, 2);
@@ -17,12 +19,15 @@ div {
     margin: $marginy;
     border: $ramki;
     background-color: lighten(nth($kolor, 2), 80);
+    &:hover{
+        background-color: lighten(nth($kolor, 2), 70);
+    }
 }
 h1, h2, h3 {
     margin: $marginy;
     color: nth($kolor, 2);
 }
-#work{
+##{$aaa} {
     p, h1, h2, h3{
         padding: $padymale;
         font: {
@@ -33,4 +38,14 @@ h1, h2, h3 {
 }
 #address {
     padding: $padyduze;
+}
+#skills {
+    text-align: center;
+    p {
+        text-align: right;
+    }
+}
+#education {
+    @extend #skills;
+    background-color: lighten(nth($kolor, 2), 70)
 }
