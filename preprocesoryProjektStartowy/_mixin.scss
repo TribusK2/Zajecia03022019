@@ -1,0 +1,6 @@
+@mixin referencje($kolor, $typ: references, $wielkosc: 30px){
+    ##{$typ}{
+        background-color: $kolor;
+        font-size: $wielkosc;
+    }
+}

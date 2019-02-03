@@ -1,0 +1,3 @@
+@function szerokosc($per) {
+    @return percentage($ekran/($per*100))
+}

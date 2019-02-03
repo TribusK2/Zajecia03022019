@@ -1,5 +1,5 @@
 p {
-  color: #415800;
+  color: #581200;
   padding: 5px;
   margin: 10px 15px;
   font-size: 20px;
@@ -7,17 +7,17 @@ p {
 
 div {
   margin: 10px 15px;
-  border: 5px solid #8cbe00;
-  background-color: #fbfff1;
+  border: 5px solid #be2700;
+  background-color: #fff4f1;
 }
 
 div:hover {
-  background-color: #eeffbe;
+  background-color: #ffcbbe;
 }
 
 h1, h2, h3 {
   margin: 10px 15px;
-  color: #415800;
+  color: #581200;
 }
 
 #work p, #work h1, #work h2, #work h3 {
@@ -39,5 +39,14 @@ h1, h2, h3 {
 }
 
 #education {
-  background-color: #eeffbe;
+  background-color: #ffcbbe;
+}
+
+#references {
+  background-color: red;
+  font-size: 30px;
+}
+
+#personal {
+  width: 33.33333%;
 }

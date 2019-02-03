@@ -1,13 +1,6 @@
-$kolor: (green), (rgb(65, 88, 0));
-$pady: 5px;
-$marginy: 10px 15px;
-$ramki: 5px solid lighten(nth($kolor, 2), 20);
-$rozmiar: 20px;
-$padingi: (duze: 40px, male: 1px);
-$padyduze: map-get($padingi, duze);
-$padymale: map-get($padingi, male);
-$aaa: 'work';
-
+@import "_zmienne";
+@import "_mixin";
+@import "_function";
 
 p {
     color: nth($kolor, 2);
@@ -31,7 +24,7 @@ h1, h2, h3 {
     p, h1, h2, h3{
         padding: $padymale;
         font: {
-            family:sans-serif;
+            family: sans-serif;
             size: small;
         }
     }
@@ -48,4 +41,10 @@ h1, h2, h3 {
 #education {
     @extend #skills;
     background-color: lighten(nth($kolor, 2), 70)
+}
+
+@include referencje(red); 
+
+#personal {
+    width: szerokosc(30);
 }

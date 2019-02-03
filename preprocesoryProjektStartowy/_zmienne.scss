@@ -1,0 +1,10 @@
+$kolor: (green), (rgb(88, 18, 0));
+$pady: 5px;
+$marginy: 10px 15px;
+$ramki: 5px solid lighten(nth($kolor, 2), 20);
+$rozmiar: 20px;
+$padingi: (duze: 40px, male: 1px);
+$padyduze: map-get($padingi, duze);
+$padymale: map-get($padingi, male);
+$aaa: 'work';
+$ekran: 1000;
